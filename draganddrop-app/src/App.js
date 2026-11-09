@@ -9,5 +9,4 @@ function App() {
     </div>
   );
 }
-/// 19分
 export default App;

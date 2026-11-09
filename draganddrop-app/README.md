@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Drag and Drop Todo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Overview
 
-## Available Scripts
+Reactを用いて開発したTrello風のTodo管理アプリケーション。
 
-In the project directory, you can run:
+Todoを複数のステータスに分類し、ドラッグ＆ドロップによってタスクを移動・管理する。
 
-### `npm start`
+## 2. Purpose
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Reactの基本的な仕組みを理解する。
+- コンポーネントの分割・再利用を学習する。
+- State管理による画面更新を理解する。
+- イベント処理を実践する。
+- ドラッグ＆ドロップによるUI操作を実装する。
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 3. Technology Stack
 
-### `npm test`
+| Technology | Purpose |
+|---|---|
+| React | UI Development |
+| JavaScript | Programming Language |
+| react-beautiful-dnd | Drag and Drop |
+| uuid | Unique ID Generation |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 4. Features
 
-### `npm run build`
+- Todoの表示・管理
+- ステータスごとのタスク管理
+- ドラッグ＆ドロップによるタスク移動
+- コンポーネント単位でのUI管理
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 5. Quickstart
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js
+- npm
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Move to project directory
+cd draganddrop-app
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Run Application
 
-## Learn More
+```bash
+# Check available scripts
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Start development server
+npm start dev
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+※ package.jsonに `dev` が定義されていない場合は、登録されている起動スクリプトを使用する。
 
-### Code Splitting
+## 6. Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```text
+draganddrop-app/
+├── public/
+├── src/
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 7. Learning Points
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Reactのコンポーネント設計
+- useStateによる状態管理
+- Propsによるコンポーネント間のデータ受け渡し
+- イベント処理
+- ドラッグ＆ドロップの実装
