@@ -1,3 +1,6 @@
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
+
 export type Message = {
   id: number
   role: "user" | "assistant"
@@ -16,7 +19,13 @@ function ChatMessage({ message }: Props) {
       </div>
 
       <div className="message-content">
-        {message.content}
+        {message.role === "assistant" ? (
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+            {message.content}
+          </ReactMarkdown>
+        ) : (
+          message.content
+        )}
       </div>
     </div>
   )

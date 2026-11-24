@@ -89,6 +89,95 @@
   box-sizing: border-box;
 }
 
+
+/* Markdown heading */
+.message-content h1,
+.message-content h2,
+.message-content h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Whitespace for the first heading */
+.message-content > :first-child {
+  margin-top: 0;
+}
+
+/* paragraph */
+.message-content p {
+  margin: 10px 0;
+}
+
+/* list */
+.message-content ul,
+.message-content ol {
+  padding-left: 24px;
+  margin: 10px 0;
+}
+
+.message-content li {
+  margin: 4px 0;
+}
+
+/* Code block */
+.message-content pre {
+  background: #e5e5e5;
+  padding: 14px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+/* Inline code */
+.message-content code {
+  background: #e5e5e5;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* Code within the code block */
+.message-content pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* table */
+.message-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  display: block;
+  overflow-x: auto;
+}
+
+.message-content th,
+.message-content td {
+  border: 1px solid #cccccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.message-content th {
+  background: #e5e5e5;
+}
+
+/* Quote */
+.message-content blockquote {
+  border-left: 4px solid #aaaaaa;
+  margin: 12px 0;
+  padding-left: 12px;
+  color: #666666;
+}
+
+/* horizontal line */
+.message-content hr {
+  border: none;
+  border-top: 1px solid #cccccc;
+  margin: 16px 0;
+}
+
 .message.user .message-content {
   background: #e8e8ff;
 }
